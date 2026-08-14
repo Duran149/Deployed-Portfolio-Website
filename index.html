@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JB Palma | Portfolio & Reports</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         INTRO VIDEO
+    ====================================================== -->
+    <div id="intro-screen">
+
+        <video
+            id="intro-video"
+            autoplay
+            muted
+            playsinline
+            preload="auto">
+
+            <source src="Maramag Alisto.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
+
+
+        <!-- Dark overlay -->
+        <div class="intro-overlay">
+
+            <div class="intro-title">
+
+                <h1>
+                    JB PALMA
+                </h1>
+
+                <p>
+                    PORTFOLIO &amp; REPORTS
+                </p>
+
+                <div class="intro-loading">
+                    <span></span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Skip Intro -->
+        <button
+            id="skip-intro"
+            type="button">
+            Skip Intro
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN WEBSITE
+    ====================================================== -->
+    <div id="main-website">
+
+
+        <!-- =========================
+             NAVIGATION BAR
+        ========================== -->
+        <header class="navbar">
+
+            <div class="nav-container">
+
+
+                <!-- Logo + Website Title -->
+                <a href="index.html" class="brand">
+
+                    <img
+                        src="Maramag ICT.png"
+                        alt="Maramag ICT Office Logo"
+                        class="brand-logo"
+                    >
+
+                    <span class="brand-title">
+                        JB PALMA PORTFOLIO &amp; REPORTS
+                    </span>
+
+                </a>
+
+
+                <!-- Navigation -->
+                <nav class="nav-menu">
+
+                    <a
+                        href="index.html"
+                        class="nav-link active">
+                        Home
+                    </a>
+
+                    <a
+                        href="career.html"
+                        class="nav-link">
+                        Career
+                    </a>
+
+                    <a
+                        href="skills.html"
+                        class="nav-link">
+                        Skills
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             HOME / HERO SECTION
+        ========================== -->
+        <main>
+
+            <section class="hero">
+
+                <div class="hero-container">
+
+
+                    <!-- LEFT SIDE - LARGE LOGO -->
+                    <div class="hero-logo">
+
+                        <img
+                            src="Maramag ICT.png"
+                            alt="Maramag Information and Communications Technology Office Logo"
+                        >
+
+                    </div>
+
+
+                    <!-- RIGHT SIDE - INTRODUCTION -->
+                    <div class="hero-content">
+
+                        <h1>
+                            Hi, I'm
+                            <span>John Gabriel Duran.</span>
+                        </h1>
+
+
+                        <p class="hero-welcome">
+
+                            Welcome to my professional portfolio website
+                            to know about my legacy in my hometown to
+                            spread to the whole community 24/7.
+
+                        </p>
+
+
+                        <p class="hero-description">
+
+                            I am a passionate Graphic Designer focused on
+                            creating a layout for the full sublimation
+                            about the types of the clothes in any genres,
+                            printing a tarpaulin and any of the printing
+                            to show to the community to considered as a
+                            proud future IT.
+
+                        </p>
+
+
+                        <!-- Buttons -->
+                        <div class="hero-buttons">
+
+                            <a
+                                href="career.html"
+                                class="btn btn-primary">
+                                View My Career
+                            </a>
+
+                            <a
+                                href="skills.html"
+                                class="btn btn-secondary">
+                                See My Skills
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+        <footer class="footer">
+
+            <p>
+
+                &copy; 2026 JB Palma Portfolio &amp; Reports.
+                All Rights Reserved.
+
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- =====================================================
+         INTRO VIDEO JAVASCRIPT
+    ====================================================== -->
+    <script>
+
+        const introScreen =
+            document.getElementById("intro-screen");
+
+        const introVideo =
+            document.getElementById("intro-video");
+
+        const skipIntro =
+            document.getElementById("skip-intro");
+
+        const mainWebsite =
+            document.getElementById("main-website");
+
+
+        /* Hide website while intro is playing */
+
+        mainWebsite.style.visibility = "hidden";
+
+
+        /* =================================================
+           FINISH INTRO
+        ================================================= */
+
+        function finishIntro() {
+
+            introScreen.classList.add("intro-finished");
+
+            mainWebsite.style.visibility = "visible";
+
+        }
+
+
+        /* =================================================
+           VIDEO FINISHED
+        ================================================= */
+
+        introVideo.addEventListener(
+            "ended",
+            function () {
+
+                finishIntro();
+
+            }
+        );
+
+
+        /* =================================================
+           SKIP INTRO BUTTON
+        ================================================= */
+
+        skipIntro.addEventListener(
+            "click",
+            function () {
+
+                introVideo.pause();
+
+                finishIntro();
+
+            }
+        );
+
+
+        /* =================================================
+           VIDEO ERROR
+        ================================================= */
+
+        introVideo.addEventListener(
+            "error",
+            function () {
+
+                finishIntro();
+
+            }
+        );
+
+    </script>
+
+</body>
+</html>
