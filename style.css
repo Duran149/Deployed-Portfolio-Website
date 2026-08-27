@@ -223,6 +223,12 @@ select {
         rgba(56, 189, 248, 0.15);
 }
 
+/*
+   IMPORTANT:
+   The .active class must be assigned to only ONE .nav-link at a time.
+   CSS controls the appearance; JavaScript or the current-page HTML
+   controls which navigation link receives the .active class.
+*/
 .nav-link.active::after {
     content: "";
 
