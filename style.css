@@ -2714,3 +2714,613 @@ main {
             0.01ms !important;
     }
 }
+
+/* =========================================================
+   54. PROJECTS PAGE
+   ========================================================= */
+
+.projects-page {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 70px;
+}
+
+
+/* =========================================================
+   55. PAGE LABEL
+   ========================================================= */
+
+.page-label {
+    display: inline-block;
+
+    color: #0284c7;
+
+    font-size: 0.82rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   56. PROJECTS SECTION
+   ========================================================= */
+
+.projects-section {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 20px 60px;
+}
+
+
+/* =========================================================
+   57. PROJECT GRID
+   ========================================================= */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 28px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   58. PROJECT CARD
+   ========================================================= */
+
+.project-card {
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fafc
+        );
+
+    border:
+        1px solid #e2e8f0;
+
+    border-radius: 20px;
+
+    padding: 28px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px
+        rgba(15, 23, 42, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* TOP COLOR */
+
+.project-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 6px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #38bdf8,
+            #0284c7
+        );
+}
+
+
+.project-card:hover {
+    transform:
+        translateY(-8px);
+
+    border-color:
+        #7dd3fc;
+
+    box-shadow:
+        0 20px 45px
+        rgba(15, 23, 42, 0.14);
+}
+
+
+/* =========================================================
+   59. DIFFERENT PROJECT COLORS
+   ========================================================= */
+
+.project-card:nth-child(1)::before {
+    background:
+        linear-gradient(
+            90deg,
+            #38bdf8,
+            #0284c7
+        );
+}
+
+.project-card:nth-child(2)::before {
+    background:
+        linear-gradient(
+            90deg,
+            #4ade80,
+            #16a34a
+        );
+}
+
+.project-card:nth-child(3)::before {
+    background:
+        linear-gradient(
+            90deg,
+            #a78bfa,
+            #7c3aed
+        );
+}
+
+
+/* =========================================================
+   60. PROJECT NUMBER
+   ========================================================= */
+
+.project-number {
+    display: inline-block;
+
+    padding:
+        6px 13px;
+
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+
+    background:
+        #e0f2fe;
+
+    border:
+        1px solid #bae6fd;
+
+    color:
+        #0284c7;
+
+    font-size:
+        0.78rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+}
+
+
+/* =========================================================
+   61. PROJECT HEADER
+   ========================================================= */
+
+.project-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 22px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+}
+
+
+.project-icon {
+    width: 65px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 2rem;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e0f2fe,
+            #bae6fd
+        );
+
+    border:
+        1px solid #7dd3fc;
+
+    box-shadow:
+        0 6px 18px
+        rgba(14, 165, 233, 0.12);
+}
+
+
+.project-main {
+    min-width: 0;
+}
+
+
+.project-main h2 {
+    color:
+        #0f172a;
+
+    font-size:
+        1.5rem;
+
+    font-weight: 850;
+
+    line-height: 1.3;
+
+    margin-bottom: 7px;
+}
+
+
+.project-role {
+    color:
+        #0284c7;
+
+    font-size:
+        0.9rem;
+
+    font-weight: 650;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   62. PROJECT DETAILS
+   ========================================================= */
+
+.project-details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+
+.project-block h3 {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color:
+        #0f172a;
+
+    font-size:
+        1.08rem;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+
+.project-block h3::before {
+    content: "";
+
+    width: 7px;
+
+    height: 24px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #38bdf8,
+            #0284c7
+        );
+}
+
+
+.project-block p {
+    color:
+        #64748b;
+
+    font-size:
+        0.95rem;
+
+    line-height:
+        1.75;
+
+    margin-bottom: 8px;
+}
+
+
+.project-block p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   63. TECHNOLOGY TAGS
+   ========================================================= */
+
+.tech-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.tech-tags span {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        7px 11px;
+
+    border-radius: 20px;
+
+    background:
+        #f0f9ff;
+
+    border:
+        1px solid #bae6fd;
+
+    color:
+        #0369a1;
+
+    font-size:
+        0.78rem;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.tech-tags span:hover {
+    background:
+        #e0f2fe;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   64. PROJECT LIST
+   ========================================================= */
+
+.project-list {
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.project-list li {
+    position: relative;
+
+    padding-left: 22px;
+
+    color:
+        #64748b;
+
+    font-size:
+        0.94rem;
+
+    line-height:
+        1.65;
+}
+
+
+.project-list li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    color:
+        #0284c7;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   65. OUTCOME SECTION
+   ========================================================= */
+
+.project-block.outcome {
+    padding:
+        18px;
+
+    background:
+        #f0f9ff;
+
+    border:
+        1px solid #bae6fd;
+
+    border-radius:
+        14px;
+}
+
+
+/* =========================================================
+   66. PROJECT EVIDENCE
+   ========================================================= */
+
+.project-evidence {
+    padding:
+        18px;
+
+    background:
+        #ffffff;
+
+    border:
+        1px dashed #7dd3fc;
+
+    border-radius:
+        14px;
+}
+
+
+.project-evidence strong {
+    display: block;
+
+    color:
+        #0f172a;
+
+    font-size:
+        1rem;
+
+    margin-bottom: 7px;
+}
+
+
+.project-evidence p {
+    color:
+        #64748b;
+
+    font-size:
+        0.9rem;
+
+    line-height:
+        1.65;
+}
+
+
+/* =========================================================
+   67. RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .projects-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .project-card {
+        max-width: 850px;
+
+        width: 100%;
+
+        margin: 0 auto;
+    }
+}
+
+
+/* =========================================================
+   68. RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .projects-section {
+        padding:
+            0 15px 45px;
+    }
+
+    .project-card {
+        padding:
+            22px 18px;
+
+        border-radius:
+            16px;
+    }
+
+    .project-content {
+        align-items:
+            flex-start;
+
+        gap:
+            13px;
+    }
+
+    .project-icon {
+        width:
+            55px;
+
+        height:
+            55px;
+
+        font-size:
+            1.6rem;
+
+        border-radius:
+            14px;
+    }
+
+    .project-main h2 {
+        font-size:
+            1.22rem;
+    }
+
+    .project-role {
+        font-size:
+            0.82rem;
+    }
+
+    .project-block h3 {
+        font-size:
+            1rem;
+    }
+
+    .project-block p,
+    .project-list li {
+        font-size:
+            0.88rem;
+    }
+
+    .tech-tags span {
+        font-size:
+            0.72rem;
+
+        padding:
+            6px 10px;
+    }
+
+    .project-details {
+        gap:
+            20px;
+    }
+}
