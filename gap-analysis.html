@@ -1,0 +1,623 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gap Analysis | John Gabriel Duran Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #0d47a1;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #ffd54f;
+        }
+
+        /* HEADER */
+        .page-header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            font-size: 18px;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .career-goal {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 35px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .career-goal h2 {
+            color: #0d47a1;
+            margin-bottom: 15px;
+        }
+
+        /* GAP CARDS */
+        .gap-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border-left: 6px solid #1976d2;
+        }
+
+        .gap-card h2 {
+            color: #0d47a1;
+            margin-bottom: 15px;
+        }
+
+        .gap-title {
+            color: #1976d2;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .gap-card ul {
+            margin: 10px 0 10px 20px;
+        }
+
+        .gap-card li {
+            margin-bottom: 7px;
+        }
+
+        /* ROADMAP */
+        .roadmap {
+            margin-top: 50px;
+        }
+
+        .roadmap h2 {
+            color: #0d47a1;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .roadmap-step {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .roadmap-step h3 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+
+        .roadmap-step strong {
+            color: #0d47a1;
+        }
+
+        /* CONCLUSION */
+        .conclusion {
+            background: #e3f2fd;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+
+        .conclusion h2 {
+            color: #0d47a1;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+
+            nav {
+                justify-content: center;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .page-header h1 {
+                font-size: 32px;
+            }
+
+            .gap-card,
+            .career-goal,
+            .roadmap-step {
+                padding: 22px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <div class="logo">
+            John Gabriel Duran
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li>
+                <a href="gap-analysis.html" class="active">
+                    Gap Analysis
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+
+        <h1>Gap Analysis</h1>
+
+        <p>
+            Identifying the skills I need to strengthen and developing
+            a roadmap toward becoming a professional IT and System Developer.
+        </p>
+
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- CAREER GOAL -->
+        <section class="career-goal">
+
+            <h2>My Career Goal</h2>
+
+            <p>
+                My career goal is to become a professional System Developer,
+                Web Developer, Mobile Application Developer, or Information
+                Technology Professional.
+            </p>
+
+            <p>
+                One of my long-term goals is to develop the
+                <strong>Student's True Grading System</strong>, a web-based
+                and mobile-based educational platform that can help teachers
+                manage student records, compute grades, and provide students
+                with access to authorized digital learning materials.
+            </p>
+
+        </section>
+
+        <!-- GAP 1 -->
+        <section class="gap-card">
+
+            <h2>Gap 1: Advanced Web Development</h2>
+
+            <p class="gap-title">Current Skill Gap</p>
+
+            <p>
+                I need to strengthen my knowledge of complete web application
+                development, including frontend development, backend
+                programming, authentication, and deployment.
+            </p>
+
+            <p class="gap-title">Improvement Plan</p>
+
+            <ul>
+                <li>Improve my HTML, CSS, and JavaScript skills.</li>
+                <li>Learn modern frontend development frameworks.</li>
+                <li>Study backend development using Python and Django.</li>
+                <li>Build small and larger web-based projects.</li>
+                <li>
+                    Develop a working prototype of the Student's True
+                    Grading System.
+                </li>
+            </ul>
+
+            <p class="gap-title">Expected Outcome</p>
+
+            <p>
+                Develop a functional and responsive educational web application.
+            </p>
+
+        </section>
+
+        <!-- GAP 2 -->
+        <section class="gap-card">
+
+            <h2>Gap 2: Mobile Application Development</h2>
+
+            <p class="gap-title">Current Skill Gap</p>
+
+            <p>
+                I need to improve my knowledge of mobile application
+                development so that the system can also be accessed through
+                supported smartphones and tablets.
+            </p>
+
+            <p class="gap-title">Improvement Plan</p>
+
+            <ul>
+                <li>Study Flutter and Dart programming.</li>
+                <li>Learn how to use Android Studio.</li>
+                <li>Create practice mobile applications.</li>
+                <li>Learn API and database integration.</li>
+                <li>Test applications on different mobile devices.</li>
+            </ul>
+
+            <p class="gap-title">Expected Outcome</p>
+
+            <p>
+                Develop a mobile application that supports authorized teachers
+                and students.
+            </p>
+
+        </section>
+
+        <!-- GAP 3 -->
+        <section class="gap-card">
+
+            <h2>Gap 3: Database Design and Management</h2>
+
+            <p class="gap-title">Current Skill Gap</p>
+
+            <p>
+                A grading system requires properly organized data for students,
+                teachers, subjects, classes, assessments, and grades. I need
+                additional experience in database design and management.
+            </p>
+
+            <p class="gap-title">Improvement Plan</p>
+
+            <ul>
+                <li>Study MySQL and relational databases.</li>
+                <li>Practice SQL queries.</li>
+                <li>Create Entity Relationship Diagrams.</li>
+                <li>Study database normalization.</li>
+                <li>Practice database backup and recovery.</li>
+            </ul>
+
+            <p class="gap-title">Expected Outcome</p>
+
+            <p>
+                Design an organized and reliable database structure for the
+                Student's True Grading System.
+            </p>
+
+        </section>
+
+        <!-- GAP 4 -->
+        <section class="gap-card">
+
+            <h2>Gap 4: Cybersecurity and Data Privacy</h2>
+
+            <p class="gap-title">Current Skill Gap</p>
+
+            <p>
+                Educational systems handle sensitive academic information.
+                I need to strengthen my knowledge of cybersecurity,
+                authentication, authorization, access control, and responsible
+                data handling.
+            </p>
+
+            <p class="gap-title">Improvement Plan</p>
+
+            <ul>
+                <li>Study cybersecurity fundamentals.</li>
+                <li>Learn secure authentication practices.</li>
+                <li>Study role-based access control.</li>
+                <li>Learn about common web security vulnerabilities.</li>
+                <li>
+                    Apply appropriate privacy and data protection practices.
+                </li>
+            </ul>
+
+            <p class="gap-title">Expected Outcome</p>
+
+            <p>
+                Develop stronger security practices for authorized users and
+                protected academic information.
+            </p>
+
+        </section>
+
+        <!-- GAP 5 -->
+        <section class="gap-card">
+
+            <h2>Gap 5: Cloud Computing and Deployment</h2>
+
+            <p class="gap-title">Current Skill Gap</p>
+
+            <p>
+                I need more experience with cloud technologies, online hosting,
+                cloud databases, storage, backups, and application deployment.
+            </p>
+
+            <p class="gap-title">Improvement Plan</p>
+
+            <ul>
+                <li>Study cloud computing fundamentals.</li>
+                <li>Explore cloud hosting platforms.</li>
+                <li>Learn Firebase and cloud database services.</li>
+                <li>Practice deploying web applications.</li>
+                <li>Study backup and recovery concepts.</li>
+            </ul>
+
+            <p class="gap-title">Expected Outcome</p>
+
+            <p>
+                Gain the skills needed to deploy and maintain an online
+                educational system.
+            </p>
+
+        </section>
+
+        <!-- GAP 6 -->
+        <section class="gap-card">
+
+            <h2>Gap 6: UI/UX Design</h2>
+
+            <p class="gap-title">Current Skill Gap</p>
+
+            <p>
+                Teachers and students need a system that is simple, organized,
+                accessible, and easy to use. I need to further develop my
+                User Interface and User Experience design skills.
+            </p>
+
+            <p class="gap-title">Improvement Plan</p>
+
+            <ul>
+                <li>Study UI/UX design principles.</li>
+                <li>Practice designing prototypes using Figma.</li>
+                <li>Create website and mobile application mockups.</li>
+                <li>Conduct usability testing.</li>
+                <li>Collect feedback and improve the interface.</li>
+            </ul>
+
+            <p class="gap-title">Expected Outcome</p>
+
+            <p>
+                Create a user-friendly interface that can be used across
+                different supported devices.
+            </p>
+
+        </section>
+
+        <!-- GAP 7 -->
+        <section class="gap-card">
+
+            <h2>Gap 7: Software Testing and Quality Assurance</h2>
+
+            <p class="gap-title">Current Skill Gap</p>
+
+            <p>
+                I need more experience in testing software applications to
+                ensure that features, grade computations, user access, and
+                system functions work correctly.
+            </p>
+
+            <p class="gap-title">Improvement Plan</p>
+
+            <ul>
+                <li>Study software testing principles.</li>
+                <li>Create test cases for grade computation.</li>
+                <li>Perform functional testing.</li>
+                <li>Conduct usability testing.</li>
+                <li>Test the system on different browsers and devices.</li>
+            </ul>
+
+            <p class="gap-title">Expected Outcome</p>
+
+            <p>
+                Improve the accuracy, reliability, and quality of the
+                Student's True Grading System.
+            </p>
+
+        </section>
+
+        <!-- ROADMAP -->
+        <section class="roadmap">
+
+            <h2>My Professional Development Roadmap</h2>
+
+            <div class="roadmap-step">
+
+                <h3>Phase 1: Build Strong Foundations</h3>
+
+                <p>
+                    <strong>Focus:</strong>
+                    HTML, CSS, JavaScript, programming fundamentals,
+                    databases, and UI/UX basics.
+                </p>
+
+                <p>
+                    <strong>Goal:</strong>
+                    Build a strong foundation in software and web development.
+                </p>
+
+            </div>
+
+            <div class="roadmap-step">
+
+                <h3>Phase 2: Develop the System Prototype</h3>
+
+                <p>
+                    <strong>Focus:</strong>
+                    Backend development, databases, authentication,
+                    and automated grade computation.
+                </p>
+
+                <p>
+                    <strong>Goal:</strong>
+                    Create the first functional version of the
+                    Student's True Grading System.
+                </p>
+
+            </div>
+
+            <div class="roadmap-step">
+
+                <h3>Phase 3: Mobile and Cloud Integration</h3>
+
+                <p>
+                    <strong>Focus:</strong>
+                    Flutter, mobile development, APIs,
+                    cloud databases, and deployment.
+                </p>
+
+                <p>
+                    <strong>Goal:</strong>
+                    Connect the web platform and mobile application.
+                </p>
+
+            </div>
+
+            <div class="roadmap-step">
+
+                <h3>Phase 4: Security and Testing</h3>
+
+                <p>
+                    <strong>Focus:</strong>
+                    Cybersecurity, data privacy, access control,
+                    software testing, and quality assurance.
+                </p>
+
+                <p>
+                    <strong>Goal:</strong>
+                    Improve the security, reliability, and accuracy
+                    of the system.
+                </p>
+
+            </div>
+
+            <div class="roadmap-step">
+
+                <h3>Phase 5: Deployment and Continuous Improvement</h3>
+
+                <p>
+                    <strong>Focus:</strong>
+                    Deployment, user feedback, performance monitoring,
+                    bug fixing, and feature improvements.
+                </p>
+
+                <p>
+                    <strong>Goal:</strong>
+                    Prepare the project for testing and continuous
+                    development.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CONCLUSION -->
+        <section class="conclusion">
+
+            <h2>Conclusion</h2>
+
+            <p>
+                My gap analysis identifies the important skills that I need
+                to strengthen in order to achieve my career goal as an
+                IT Professional and System Developer.
+            </p>
+
+            <p>
+                Through continuous learning, online courses, certifications,
+                self-study, hands-on projects, testing, and prototype
+                development, I plan to improve my skills and continue the
+                development of the Student's True Grading System.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 John Gabriel Duran | Personal Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```

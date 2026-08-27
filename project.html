@@ -1,0 +1,470 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | John Gabriel Duran Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #0d47a1;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #ffd54f;
+        }
+
+        /* HEADER */
+        .page-header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* CONTENT */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .project-card {
+            background: white;
+            margin-bottom: 35px;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-card h2 {
+            color: #0d47a1;
+            margin-bottom: 10px;
+        }
+
+        .project-role {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            color: #1976d2;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tool {
+            background: #e3f2fd;
+            color: #0d47a1;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .project-card ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .project-card li {
+            margin-bottom: 8px;
+        }
+
+        .evidence {
+            margin-top: 25px;
+            padding: 20px;
+            background: #f1f8e9;
+            border-left: 5px solid #43a047;
+            border-radius: 5px;
+        }
+
+        .evidence a {
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            nav {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .page-header h1 {
+                font-size: 32px;
+            }
+
+            .project-card {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">John Gabriel Duran</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="project.html" class="active">Projects</a></li>
+            <li><a href="gap-analysis.html">Gap Analysis</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>My Projects</h1>
+        <p>
+            A collection of academic and personal projects that demonstrate
+            my interest in technology, system development, and education.
+        </p>
+    </section>
+
+    <!-- PROJECT CONTENT -->
+    <main class="container">
+
+        <!-- PROJECT 1 -->
+        <section class="project-card">
+
+            <h2>Student's True Grading System</h2>
+
+            <p class="project-role">
+                Role: Project Proponent / Lead System Developer
+            </p>
+
+            <h3 class="section-title">Problem Statement</h3>
+
+            <p>
+                Teachers often spend a significant amount of time manually
+                recording scores and computing student grades. Manual
+                computation may result in calculation errors, delays, stress,
+                and misunderstandings regarding academic performance.
+            </p>
+
+            <p>
+                The Student's True Grading System is a proposed web-based and
+                mobile-based educational platform designed to help teachers
+                manage student records and automatically compute grades based
+                on authorized grading criteria.
+            </p>
+
+            <h3 class="section-title">Technologies and Tools Used</h3>
+
+            <div class="tools">
+                <span class="tool">HTML</span>
+                <span class="tool">CSS</span>
+                <span class="tool">JavaScript</span>
+                <span class="tool">Python</span>
+                <span class="tool">Django</span>
+                <span class="tool">MySQL</span>
+                <span class="tool">Flutter</span>
+                <span class="tool">Firebase</span>
+                <span class="tool">Figma</span>
+                <span class="tool">GitHub</span>
+            </div>
+
+            <h3 class="section-title">Key Contributions</h3>
+
+            <ul>
+                <li>
+                    Designed the overall concept of the Student's True
+                    Grading System.
+                </li>
+
+                <li>
+                    Planned the database structure for teachers, students,
+                    subjects, classes, assessments, and grades.
+                </li>
+
+                <li>
+                    Designed an automated grade computation process.
+                </li>
+
+                <li>
+                    Planned teacher and student user accounts with different
+                    access permissions.
+                </li>
+
+                <li>
+                    Designed a responsive web interface for computers,
+                    laptops, tablets, and smartphones.
+                </li>
+
+                <li>
+                    Proposed a mobile application version for easier access.
+                </li>
+
+                <li>
+                    Planned the integration of e-books and digital learning
+                    materials for enrolled subjects.
+                </li>
+
+                <li>
+                    Designed the system to help organize academic records
+                    and reduce repetitive manual computation.
+                </li>
+            </ul>
+
+            <h3 class="section-title">Outcome and Expected Impact</h3>
+
+            <ul>
+                <li>Faster and more organized grade computation.</li>
+
+                <li>Reduced risk of repetitive manual calculation errors.</li>
+
+                <li>Improved management of student academic records.</li>
+
+                <li>
+                    Reduced workload and stress associated with manual
+                    grade computation.
+                </li>
+
+                <li>
+                    Easier access to digital learning materials and e-books
+                    for students.
+                </li>
+
+                <li>
+                    Improved transparency and organization of academic
+                    information for authorized users.
+                </li>
+
+                <li>
+                    Support for the digital transformation of the K to 12
+                    educational environment.
+                </li>
+            </ul>
+
+            <div class="evidence">
+
+                <h3>Project Evidence</h3>
+
+                <p>
+                    GitHub Repository:
+                    <a href="#" target="_blank">
+                        Add GitHub Project Link
+                    </a>
+                </p>
+
+                <p>
+                    Demo Video:
+                    <a href="#" target="_blank">
+                        Add Demo Video Link
+                    </a>
+                </p>
+
+                <p>
+                    Screenshots, UI/UX prototypes, system diagrams,
+                    and sample outputs can be added here.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECT 2 -->
+        <section class="project-card">
+
+            <h2>Educational E-Book and Learning Materials Platform</h2>
+
+            <p class="project-role">
+                Role: System Designer / Developer
+            </p>
+
+            <h3 class="section-title">Problem Statement</h3>
+
+            <p>
+                Students may have limited access to learning materials outside
+                the classroom. Printed materials can also be difficult to
+                carry, replace, and organize.
+            </p>
+
+            <h3 class="section-title">Technologies and Tools Used</h3>
+
+            <div class="tools">
+                <span class="tool">HTML</span>
+                <span class="tool">CSS</span>
+                <span class="tool">JavaScript</span>
+                <span class="tool">Firebase</span>
+                <span class="tool">Cloud Storage</span>
+                <span class="tool">Figma</span>
+            </div>
+
+            <h3 class="section-title">Key Contributions</h3>
+
+            <ul>
+                <li>
+                    Designed a digital platform for organizing subject-based
+                    learning materials.
+                </li>
+
+                <li>
+                    Planned e-book access for enrolled students.
+                </li>
+
+                <li>
+                    Designed a responsive interface for different devices.
+                </li>
+
+                <li>
+                    Organized learning materials according to subject coverage.
+                </li>
+            </ul>
+
+            <h3 class="section-title">Outcome and Expected Impact</h3>
+
+            <p>
+                The proposed platform can help students access learning
+                resources using compatible devices such as smartphones,
+                computers, laptops, and tablets, subject to authorized
+                access and availability.
+            </p>
+
+        </section>
+
+        <!-- PROJECT 3 -->
+        <section class="project-card">
+
+            <h2>Responsive Educational Portfolio Website</h2>
+
+            <p class="project-role">
+                Role: Web Designer / Developer
+            </p>
+
+            <h3 class="section-title">Problem Statement</h3>
+
+            <p>
+                Students and aspiring IT professionals need a professional
+                platform to present their skills, educational background,
+                career goals, projects, and professional development plans.
+            </p>
+
+            <h3 class="section-title">Technologies and Tools Used</h3>
+
+            <div class="tools">
+                <span class="tool">HTML5</span>
+                <span class="tool">CSS3</span>
+                <span class="tool">JavaScript</span>
+                <span class="tool">GitHub Pages</span>
+            </div>
+
+            <h3 class="section-title">Key Contributions</h3>
+
+            <ul>
+                <li>Designed the overall portfolio website structure.</li>
+                <li>Created responsive pages for different screen sizes.</li>
+                <li>Organized information about skills and career goals.</li>
+                <li>Added project documentation and gap analysis pages.</li>
+                <li>Prepared the website for online deployment.</li>
+            </ul>
+
+            <h3 class="section-title">Outcome and Impact</h3>
+
+            <p>
+                The portfolio provides a centralized online platform for
+                presenting my academic background, technical interests,
+                projects, and professional development roadmap.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 John Gabriel Duran | Personal Portfolio
+        </p>
+    </footer>
+
+</body>
+</html>
+```
