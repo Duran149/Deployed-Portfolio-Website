@@ -2727,47 +2727,60 @@ main {
 
 
 /* =========================================================
-   55. PROJECTS HEADER
+   MY PROJECTS TITLE - BLUE UNDERLINE
    ========================================================= */
 
-.projects-page .page-header {
-    max-width: 900px;
-    padding: 4.5rem 20px 3.5rem;
-}
-
-.projects-page .page-label {
-    display: inline-flex;
-
-    align-items: center;
-    gap: 8px;
-
-    padding: 7px 15px;
-
-    margin-bottom: 15px;
-
-    border-radius: 30px;
-
-    background: #e0f2fe;
-
-    border: 1px solid #bae6fd;
-
-    color: #0284c7;
-
-    font-size: 0.78rem;
-
-    font-weight: 800;
-
-    letter-spacing: 1.5px;
-}
-
 .projects-page .page-header h1 {
-    font-size: clamp(2.3rem, 5vw, 4rem);
+    position: relative;
+
+    display: inline-block;
+
+    color: #0f172a;
+
+    font-size:
+        clamp(2.3rem, 5vw, 4rem);
+
+    font-weight: 900;
+
+    line-height: 1.2;
+
+    margin-bottom: 28px;
+
+    padding-bottom: 18px;
 }
 
-.projects-page .page-header p {
-    max-width: 720px;
-}
 
+/* Blue line under "My Projects" */
+
+.projects-page .page-header h1::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 0;
+
+    transform:
+        translateX(-50%);
+
+    width: 95px;
+
+    height: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #38bdf8,
+            #0284c7
+        );
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 3px 8px
+        rgba(14, 165, 233, 0.18);
+}
 
 /* =========================================================
    56. PROJECTS SECTION
