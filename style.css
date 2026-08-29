@@ -3168,32 +3168,62 @@ main {
 
 
 /* =========================================================
-   PROJECT TITLE
+   55. PROJECTS PAGE TITLE
    ========================================================= */
 
-.project-main h2 {
-    margin: 0 0 8px;
+.projects-title {
+    position: relative;
 
-    color:
-        #1e293b;
+    display: inline-block;
+
+    color: #0f172a;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
 
     font-size:
-        clamp(
-            1.5rem,
-            3vw,
-            2rem
-        );
+        clamp(3rem, 6vw, 4.5rem);
 
-    font-weight:
-        900;
+    font-weight: 900;
 
-    line-height:
-        1.2;
+    line-height: 1.1;
 
-    letter-spacing:
-        -0.5px;
+    letter-spacing: -2.5px;
+
+    margin: 0;
+
+    padding-bottom: 24px;
+
+    text-align: center;
 }
 
+
+/* =========================================================
+   PROJECTS TITLE - SINGLE BLUE UNDERLINE
+   ========================================================= */
+
+.projects-title::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 0;
+
+    transform:
+        translateX(-50%);
+
+    width: 128px;
+
+    height: 6px;
+
+    background: #18a9e8;
+
+    border-radius: 50px;
+}
 
 /* =========================================================
    PROJECT ROLE
