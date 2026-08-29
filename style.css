@@ -4295,21 +4295,18 @@ main {
 
 
 /* =========================================================
-   78. PROFESSIONAL DEVELOPMENT ROADMAP
+   78. ROADMAP CONTAINER
    ========================================================= */
 
 .roadmap {
     position: relative;
 
     width: 100%;
-
     max-width: 1150px;
 
-    margin:
-        100px auto 0;
+    margin: 100px auto 0;
 
-    padding:
-        70px 60px;
+    padding: 70px 60px;
 
     background:
         linear-gradient(
@@ -4318,11 +4315,9 @@ main {
             #f8fafc
         );
 
-    border:
-        1px solid #e2e8f0;
+    border: 1px solid #e2e8f0;
 
-    border-radius:
-        28px;
+    border-radius: 28px;
 
     box-shadow:
         0 20px 50px
@@ -4332,7 +4327,9 @@ main {
 }
 
 
-/* TOP DECORATION */
+/* =========================================================
+   TOP BLUE DECORATION
+   ========================================================= */
 
 .roadmap::before {
     content: "";
@@ -4356,674 +4353,238 @@ main {
 
 
 /* =========================================================
-   79. ROADMAP TITLE
+   79. ROADMAP HEADING
+   ========================================================= */
+
+.roadmap-heading {
+    position: relative;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto 60px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   ROADMAP LABEL
+   ========================================================= */
+
+.roadmap-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 8px 16px;
+
+    margin-bottom: 18px;
+
+    border-radius: 50px;
+
+    background: #e0f2fe;
+
+    color: #0284c7;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   80. MAIN ROADMAP TITLE
    ========================================================= */
 
 .roadmap-title {
     position: relative;
 
-    text-align: center;
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0 0 22px;
 
     color: #0f172a;
 
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size:
+        clamp(
+            2.2rem,
+            4.5vw,
+            3.5rem
+        );
 
     font-weight: 900;
 
-    line-height: 1.2;
+    line-height: 1.15;
 
-    margin-bottom: 50px;
+    letter-spacing: -1.5px;
 
-    letter-spacing: 1px;
+    text-align: center;
+
+    white-space: normal;
 }
+
+
+/* =========================================================
+   81. BLUE UNDERLINE
+   =========================================================
+   
+   IMPORTANT:
+   The underline is positioned AFTER the text.
+   It will NEVER pass through the letters.
+   ========================================================= */
 
 .roadmap-title::after {
     content: "";
 
-    display: block;
+    position: absolute;
 
-    width: 70px;
-    height: 4px;
+    left: 50%;
 
-    /* Space between title text and blue line */
-    margin: 12px auto 0;
+    bottom: 0;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        clamp(
+            110px,
+            18vw,
+            170px
+        );
+
+    height: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #38bdf8,
+            #0284c7
+        );
 
     border-radius: 20px;
 
-    background: linear-gradient(
-        45deg,
-        #38bdf8,
-        #0284c7
-    );
-}
-
-
-/* =========================================================
-   80. ROADMAP TIMELINE
-   ========================================================= */
-
-.roadmap-list {
-    position: relative;
-
-    max-width: 900px;
-
-    margin:
-        0 auto;
-
-    padding:
-        10px 0 10px 75px;
-
-    border-left:
-        4px solid #bae6fd;
-}
-
-
-/* =========================================================
-   81. ROADMAP ITEM
-   ========================================================= */
-
-.roadmap-item {
-    position: relative;
-
-    padding:
-        0 0 45px;
-}
-
-
-.roadmap-item:last-child {
-    padding-bottom:
-        0;
-}
-
-
-/* =========================================================
-   ROADMAP TIMELINE DOT
-   ========================================================= */
-
-.roadmap-item::before {
-    content: "";
-
-    position: absolute;
-
-    left:
-        -88px;
-
-    top:
-        20px;
-
-    width:
-        22px;
-
-    height:
-        22px;
-
-    border-radius:
-        50%;
-
-    background:
-        #ffffff;
-
-    border:
-        6px solid #38bdf8;
-
     box-shadow:
-        0 0 0 5px #e0f2fe;
-
-    z-index:
-        2;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-
-.roadmap-item:hover::before {
-    transform:
-        scale(1.2);
-
-    box-shadow:
-        0 0 0 7px #bae6fd;
+        0 3px 8px
+        rgba(14, 165, 233, 0.18);
 }
 
 
 /* =========================================================
-   ROADMAP CONTENT CARD
+   82. ROADMAP INTRO / DESCRIPTION
    ========================================================= */
-
-.roadmap-content {
-    position: relative;
-
-    padding:
-        25px 28px;
-
-    background:
-        #ffffff;
-
-    border:
-        1px solid #e2e8f0;
-
-    border-radius:
-        18px;
-
-    box-shadow:
-        0 8px 22px
-        rgba(15, 23, 42, 0.06);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
-}
-
-
-.roadmap-content::before {
-    content: "";
-
-    position: absolute;
-
-    left:
-        -11px;
-
-    top:
-        22px;
-
-    width:
-        20px;
-
-    height:
-        20px;
-
-    background:
-        #ffffff;
-
-    border-left:
-        1px solid #e2e8f0;
-
-    border-bottom:
-        1px solid #e2e8f0;
-
-    transform:
-        rotate(45deg);
-}
-
-
-.roadmap-item:hover .roadmap-content {
-    transform:
-        translateX(8px);
-
-    border-color:
-        #7dd3fc;
-
-    box-shadow:
-        0 15px 35px
-        rgba(15, 23, 42, 0.12);
-}
-
-
-/* =========================================================
-   82. ROADMAP PHASE BADGE
-   ========================================================= */
-
-.roadmap-phase {
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    padding:
-        6px 14px;
-
-    margin-bottom:
-        12px;
-
-    border-radius:
-        30px;
-
-    background:
-        #e0f2fe;
-
-    border:
-        1px solid #bae6fd;
-
-    color:
-        #0284c7;
-
-    font-size:
-        0.75rem;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        0.8px;
-
-    text-transform:
-        uppercase;
-}
-
-
-/* =========================================================
-   ROADMAP PHASE TITLE
-   ========================================================= */
-
-.roadmap-item h3 {
-    position: relative;
-
-    color:
-        #0f172a;
-
-    font-size:
-        1.3rem;
-
-    font-weight:
-        850;
-
-    line-height:
-        1.35;
-
-    margin:
-        0 0 10px;
-}
-
-
-/* =========================================================
-   ROADMAP DESCRIPTION
-   ========================================================= */
-
-.roadmap-item p {
-    position: relative;
-
-    max-width:
-        800px;
-
-    color:
-        #64748b;
-
-    font-size:
-        0.95rem;
-
-    line-height:
-        1.8;
-
-    margin:
-        0;
-}
-
-
-/* =========================================================
-   DIFFERENT ROADMAP PHASE COLORS
-   ========================================================= */
-
-.roadmap-item:nth-child(1)::before {
-    border-color:
-        #38bdf8;
-}
-
-
-.roadmap-item:nth-child(1) .roadmap-phase {
-    background:
-        #e0f2fe;
-
-    color:
-        #0284c7;
-
-    border-color:
-        #bae6fd;
-}
-
-
-/* PHASE 2 */
-
-.roadmap-item:nth-child(2)::before {
-    border-color:
-        #22c55e;
-}
-
-
-.roadmap-item:nth-child(2) .roadmap-phase {
-    background:
-        #f0fdf4;
-
-    color:
-        #15803d;
-
-    border-color:
-        #bbf7d0;
-}
-
-
-/* PHASE 3 */
-
-.roadmap-item:nth-child(3)::before {
-    border-color:
-        #f59e0b;
-}
-
-
-.roadmap-item:nth-child(3) .roadmap-phase {
-    background:
-        #fffbeb;
-
-    color:
-        #b45309;
-
-    border-color:
-        #fde68a;
-}
-
-
-/* PHASE 4 */
-
-.roadmap-item:nth-child(4)::before {
-    border-color:
-        #8b5cf6;
-}
-
-
-.roadmap-item:nth-child(4) .roadmap-phase {
-    background:
-        #f5f3ff;
-
-    color:
-        #6d28d9;
-
-    border-color:
-        #ddd6fe;
-}
-
-
-/* PHASE 5 */
-
-.roadmap-item:nth-child(5)::before {
-    border-color:
-        #ec4899;
-}
-
-
-.roadmap-item:nth-child(5) .roadmap-phase {
-    background:
-        #fdf2f8;
-
-    color:
-        #be185d;
-
-    border-color:
-        #fbcfe8;
-}
-
-
-/* =========================================================
-   83. ROADMAP RESPONSIVE - TABLET
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    .roadmap {
-        padding:
-            55px 40px;
-    }
-
-    .roadmap-list {
-        padding-left:
-            65px;
-    }
-
-    .roadmap-item::before {
-        left:
-            -78px;
-    }
-
-}
-
-
-/* =========================================================
-   84. ROADMAP RESPONSIVE - MOBILE
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-    .roadmap {
-        margin-top:
-            70px;
-
-        padding:
-            45px 20px;
-
-        border-radius:
-            20px;
-    }
-
-    .roadmap-title {
-        font-size:
-            1.8rem;
-    }
-
-    .roadmap-description {
-        font-size:
-            0.9rem;
-
-        margin-bottom:
-            45px;
-    }
-
-    .roadmap-list {
-        padding-left:
-            42px;
-
-        border-left-width:
-            3px;
-    }
-
-    .roadmap-item {
-        padding-bottom:
-            30px;
-    }
-
-    .roadmap-item::before {
-        left:
-            -52px;
-
-        top:
-            18px;
-
-        width:
-            16px;
-
-        height:
-            16px;
-
-        border-width:
-            4px;
-
-        box-shadow:
-            0 0 0 4px #e0f2fe;
-    }
-
-    .roadmap-content {
-        padding:
-            20px;
-
-        border-radius:
-            15px;
-    }
-
-    .roadmap-content::before {
-        left:
-            -9px;
-
-        width:
-            16px;
-
-        height:
-            16px;
-    }
-
-    .roadmap-item:hover .roadmap-content {
-        transform:
-            translateX(4px);
-    }
-
-    .roadmap-item h3 {
-        font-size:
-            1.05rem;
-    }
-
-    .roadmap-item p {
-        font-size:
-            0.87rem;
-
-        line-height:
-            1.7;
-    }
-
-    .roadmap-phase {
-        font-size:
-            0.68rem;
-
-        padding:
-            5px 10px;
-    }
-
-}
-
-/* =========================================================
-   85. ENHANCED ROADMAP HEADER
-   ========================================================= */
-
-.roadmap-heading {
-    max-width: 850px;
-
-    margin:
-        0 auto 60px;
-
-    text-align:
-        center;
-}
-
-
-.roadmap-label {
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    padding:
-        8px 16px;
-
-    margin-bottom:
-        18px;
-
-    border-radius:
-        50px;
-
-    background:
-        #e0f2fe;
-
-    color:
-        #0284c7;
-
-    font-size:
-        0.75rem;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        1.5px;
-}
-
 
 .roadmap-intro {
-    max-width:
-        700px;
+    width: 100%;
 
-    margin:
-        -35px auto 0;
+    max-width: 700px;
 
-    color:
-        #64748b;
+    margin: 18px auto 0;
 
-    line-height:
-        1.8;
+    color: #64748b;
 
-    font-size:
-        0.95rem;
+    font-size: 0.95rem;
+
+    line-height: 1.8;
+
+    text-align: center;
 }
 
 
 /* =========================================================
-   86. ENHANCED ROADMAP TIMELINE
+   83. ROADMAP TIMELINE
    ========================================================= */
 
 .roadmap-list {
-    border-left:
-        none;
+    position: relative;
 
-    padding-left:
-        0;
+    width: 100%;
 
-    gap:
-        24px;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+    border-left: none;
 }
 
 
+/* =========================================================
+   84. ROADMAP ITEM
+   ========================================================= */
+
 .roadmap-item {
-    display:
-        grid;
+    position: relative;
+
+    width: 100%;
+
+    display: grid;
 
     grid-template-columns:
         110px 1fr;
 
-    gap:
-        25px;
+    gap: 25px;
 
-    align-items:
-        stretch;
+    align-items: stretch;
 
-    padding:
-        0;
-}
+    padding: 0;
 
-
-/* REMOVE OLD CIRCLE */
-
-.roadmap-item::before {
-    display:
-        none;
+    margin: 0;
 }
 
 
 /* =========================================================
-   87. ROADMAP PHASE NUMBER
+   REMOVE OLD TIMELINE CIRCLE
+   ========================================================= */
+
+.roadmap-item::before {
+    display: none;
+}
+
+
+/* =========================================================
+   85. ROADMAP PHASE NUMBER
    ========================================================= */
 
 .roadmap-phase {
-    position:
-        relative;
+    position: relative;
 
-    display:
-        flex;
+    display: flex;
 
-    flex-direction:
-        column;
+    flex-direction: column;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    min-height:
-        130px;
+    min-height: 130px;
 
-    padding:
-        18px 10px;
-
-    border-radius:
-        18px;
+    padding: 18px 10px;
 
     background:
         linear-gradient(
@@ -5032,98 +4593,105 @@ main {
             #0284c7
         );
 
-    color:
-        #ffffff;
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 18px;
 
     box-shadow:
         0 10px 25px
         rgba(14, 165, 233, 0.18);
+
+    text-align: center;
+
+    text-transform: none;
 }
 
 
+/* Connector between phases */
+
 .roadmap-phase::after {
-    content:
-        "";
+    content: "";
 
-    position:
-        absolute;
+    position: absolute;
 
-    width:
-        2px;
+    left: 50%;
 
-    height:
-        24px;
-
-    bottom:
-        -24px;
-
-    left:
-        50%;
+    bottom: -24px;
 
     transform:
         translateX(-50%);
 
-    background:
-        #bae6fd;
+    width: 2px;
+
+    height: 24px;
+
+    background: #bae6fd;
 }
 
+
+/* Remove connector from last phase */
 
 .roadmap-item:last-child
 .roadmap-phase::after {
-    display:
-        none;
-}
-
-
-.roadmap-phase span {
-    font-size:
-        2rem;
-
-    font-weight:
-        900;
-
-    line-height:
-        1;
-}
-
-
-.roadmap-phase small {
-    margin-top:
-        8px;
-
-    font-size:
-        0.58rem;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        1px;
-
-    opacity:
-        0.9;
+    display: none;
 }
 
 
 /* =========================================================
-   88. ROADMAP CONTENT CARD
+   PHASE NUMBER
+   ========================================================= */
+
+.roadmap-phase span {
+    display: block;
+
+    font-size: 2rem;
+
+    font-weight: 900;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   PHASE LABEL
+   ========================================================= */
+
+.roadmap-phase small {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 0.58rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    line-height: 1.3;
+
+    opacity: 0.95;
+}
+
+
+/* =========================================================
+   86. ROADMAP CONTENT CARD
    ========================================================= */
 
 .roadmap-content {
-    position:
-        relative;
+    position: relative;
 
-    padding:
-        28px 30px;
+    width: 100%;
 
-    background:
-        #ffffff;
+    padding: 28px 30px;
+
+    background: #ffffff;
 
     border:
         1px solid #e2e8f0;
 
-    border-radius:
-        18px;
+    border-radius: 18px;
 
     box-shadow:
         0 8px 25px
@@ -5136,31 +4704,28 @@ main {
 }
 
 
+/* =========================================================
+   CARD ARROW
+   ========================================================= */
+
 .roadmap-content::before {
-    content:
-        "";
+    content: "";
 
-    position:
-        absolute;
+    position: absolute;
 
-    width:
-        10px;
+    width: 10px;
 
-    height:
-        10px;
+    height: 10px;
 
-    left:
-        -6px;
+    left: -6px;
 
-    top:
-        50%;
+    top: 50%;
 
     transform:
         translateY(-50%)
         rotate(45deg);
 
-    background:
-        #ffffff;
+    background: #ffffff;
 
     border-left:
         1px solid #e2e8f0;
@@ -5169,6 +4734,10 @@ main {
         1px solid #e2e8f0;
 }
 
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
 
 .roadmap-item:hover
 .roadmap-content {
@@ -5184,6 +4753,10 @@ main {
 }
 
 
+/* =========================================================
+   87. ROADMAP CONTENT TITLE
+   ========================================================= */
+
 .roadmap-content h3 {
     margin:
         0 0 10px;
@@ -5196,12 +4769,18 @@ main {
 
     font-weight:
         850;
+
+    line-height:
+        1.35;
 }
 
 
+/* =========================================================
+   88. ROADMAP CONTENT DESCRIPTION
+   ========================================================= */
+
 .roadmap-content p {
-    margin:
-        0;
+    margin: 0;
 
     color:
         #64748b;
@@ -5215,10 +4794,104 @@ main {
 
 
 /* =========================================================
-   89. TABLET RESPONSIVE
+   89. PHASE 1
+   ========================================================= */
+
+.roadmap-item:nth-child(1)
+.roadmap-phase {
+    background:
+        linear-gradient(
+            135deg,
+            #38bdf8,
+            #0284c7
+        );
+}
+
+
+/* =========================================================
+   90. PHASE 2
+   ========================================================= */
+
+.roadmap-item:nth-child(2)
+.roadmap-phase {
+    background:
+        linear-gradient(
+            135deg,
+            #22c55e,
+            #15803d
+        );
+}
+
+
+/* =========================================================
+   91. PHASE 3
+   ========================================================= */
+
+.roadmap-item:nth-child(3)
+.roadmap-phase {
+    background:
+        linear-gradient(
+            135deg,
+            #f59e0b,
+            #d97706
+        );
+}
+
+
+/* =========================================================
+   92. PHASE 4
+   ========================================================= */
+
+.roadmap-item:nth-child(4)
+.roadmap-phase {
+    background:
+        linear-gradient(
+            135deg,
+            #8b5cf6,
+            #6d28d9
+        );
+}
+
+
+/* =========================================================
+   93. PHASE 5
+   ========================================================= */
+
+.roadmap-item:nth-child(5)
+.roadmap-phase {
+    background:
+        linear-gradient(
+            135deg,
+            #ec4899,
+            #be185d
+        );
+}
+
+
+/* =========================================================
+   94. TABLET - 900PX
    ========================================================= */
 
 @media (max-width: 900px) {
+
+    .roadmap {
+        padding:
+            55px 40px;
+    }
+
+
+    .roadmap-title {
+        font-size:
+            clamp(
+                2rem,
+                6vw,
+                3rem
+            );
+
+        letter-spacing:
+            -1px;
+    }
+
 
     .roadmap-item {
         grid-template-columns:
@@ -5228,14 +4901,33 @@ main {
             20px;
     }
 
+
+    .roadmap-phase {
+        min-height:
+            115px;
+    }
 }
 
 
 /* =========================================================
-   90. MOBILE RESPONSIVE
+   95. MOBILE - 600PX
    ========================================================= */
 
 @media (max-width: 600px) {
+
+    .roadmap {
+        width: calc(100% - 30px);
+
+        margin-top:
+            70px;
+
+        padding:
+            45px 20px;
+
+        border-radius:
+            20px;
+    }
+
 
     .roadmap-heading {
         margin-bottom:
@@ -5243,12 +4935,58 @@ main {
     }
 
 
+    .roadmap-label {
+        font-size:
+            0.68rem;
+
+        padding:
+            7px 12px;
+
+        letter-spacing:
+            1.2px;
+    }
+
+
+    .roadmap-title {
+        font-size:
+            1.8rem;
+
+        line-height:
+            1.2;
+
+        letter-spacing:
+            -0.8px;
+
+        padding-bottom:
+            18px;
+    }
+
+
+    /* Smaller but still clearly separated */
+    .roadmap-title::after {
+        width:
+            110px;
+
+        height:
+            4px;
+    }
+
+
     .roadmap-intro {
         margin-top:
-            -25px;
+            16px;
 
         font-size:
             0.88rem;
+
+        line-height:
+            1.7;
+    }
+
+
+    .roadmap-list {
+        gap:
+            18px;
     }
 
 
@@ -5270,6 +5008,9 @@ main {
 
         gap:
             12px;
+
+        border-radius:
+            15px;
     }
 
 
@@ -5297,6 +5038,9 @@ main {
     .roadmap-content {
         padding:
             24px 22px;
+
+        border-radius:
+            15px;
     }
 
 
@@ -5310,6 +5054,114 @@ main {
     .roadmap-content {
         transform:
             translateY(-4px);
+    }
+
+
+    .roadmap-content h3 {
+        font-size:
+            1.05rem;
+    }
+
+
+    .roadmap-content p {
+        font-size:
+            0.87rem;
+
+        line-height:
+            1.7;
+    }
+}
+
+
+/* =========================================================
+   96. VERY SMALL MOBILE - 400PX
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .roadmap {
+        width:
+            calc(100% - 20px);
+
+        padding:
+            38px 15px;
+    }
+
+
+    .roadmap-title {
+        font-size:
+            1.55rem;
+
+        padding-bottom:
+            16px;
+    }
+
+
+    .roadmap-title::after {
+        width:
+            90px;
+
+        height:
+            4px;
+    }
+
+
+    .roadmap-intro {
+        font-size:
+            0.82rem;
+    }
+
+
+    .roadmap-phase {
+        min-height:
+            75px;
+
+        padding:
+            14px 8px;
+    }
+
+
+    .roadmap-phase span {
+        font-size:
+            1.45rem;
+    }
+
+
+    .roadmap-phase small {
+        font-size:
+            0.58rem;
+    }
+
+
+    .roadmap-content {
+        padding:
+            20px 17px;
+    }
+
+
+    .roadmap-content h3 {
+        font-size:
+            1rem;
+    }
+
+
+    .roadmap-content p {
+        font-size:
+            0.82rem;
+    }
+}
+
+
+/* =========================================================
+   97. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .roadmap-content,
+    .roadmap-phase {
+        transition:
+            none;
     }
 
 }
