@@ -1031,10 +1031,10 @@ main {
 
 .timeline-item h3 {
     color:
-        #0f172a;
+        #000000;
 
     font-size:
-        1.45rem;
+        50px;
 
     font-weight:
         800;
@@ -1168,7 +1168,7 @@ main {
         Verdana,
         sans-serif;
 
-    font-size: 70px;
+    font-size: 50px;
 
     font-style:  Bold;
    
