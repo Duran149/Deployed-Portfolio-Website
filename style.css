@@ -1144,13 +1144,13 @@ main {
 
 /* Main Skills Page */
 .skills-page .page-header h1 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 58px;
     font-weight: 800;
     line-height: 1.1;
-    color: #243b5a;
+    color: #10182b;
     text-align: center;
-    margin: 0 0 15px;
+    margin: 0;
 }
 
 /* =========================================================
