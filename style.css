@@ -1139,19 +1139,16 @@ main {
 
 
 /* =========================================================
-   SKILLS PAGE - CENTERED WIDTH
+   SKILLS PAGE MAIN CONTAINER
    ========================================================= */
 
-/* Main Skills Page */
-.skills-page .page-header h1 {
-     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 58px;
-    font-weight: 800;
-    line-height: 1.1;
-    color: #10182b;
-    text-align: center;
-    margin: 0;
+.skills-page {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 45px 0 60px;
 }
+
 
 /* =========================================================
    PAGE HEADER
@@ -1159,75 +1156,144 @@ main {
 
 .skills-page .page-header {
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 70px;
 }
 
+/* KEY SKILLS INVENTORY */
 .skills-page .page-header h1 {
-    font-size: 32px;
-    font-weight: 700;
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    font-size: 40px;
+    font-weight: 800;
+
+    line-height: 1.2;
+
     color: #243b5a;
-    margin-bottom: 12px;
+
+    text-align: center;
+
+    margin: 0 0 12px;
 }
 
+/* Small blue line underneath heading */
 .skills-page .heading-line {
-    width: 80px;
+    width: 88px;
     height: 3px;
+
     background: #18aeea;
-    margin: 0 auto 15px;
+
+    margin: 0 auto 18px;
+
     border-radius: 10px;
 }
 
+/* Description */
 .skills-page .page-header p {
-    max-width: 800px;
+    max-width: 900px;
+
     margin: 0 auto;
-    color: #667b96;
+
+    color: #607b9b;
+
     font-size: 16px;
+
     line-height: 1.6;
+
+    text-align: center;
 }
 
 
 /* =========================================================
-   PROFICIENCY SCALE
+   PROFICIENCY SECTION
    ========================================================= */
 
 .proficiency-section {
     width: 100%;
-    margin-bottom: 55px;
+
+    margin: 0 auto 65px;
 }
 
 .proficiency-section h2 {
-    text-align: center;
-    font-size: 28px;
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
     color: #243b5a;
-    margin-bottom: 25px;
+
+    text-align: center;
+
+    margin: 0 0 32px;
 }
+
+
+/* =========================================================
+   PROFICIENCY GRID
+   ========================================================= */
 
 .proficiency-grid {
     width: 100%;
+
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 20px;
 }
+
+
+/* =========================================================
+   PROFICIENCY CARDS
+   ========================================================= */
 
 .proficiency-card {
     background: #ffffff;
-    border: 1px solid #dbe7f1;
+
+    border: 1px solid #dce7f0;
+
     border-radius: 15px;
-    padding: 22px 18px;
-    box-shadow: 0 5px 18px rgba(31, 78, 121, 0.08);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    padding: 25px 20px;
+
+    min-height: 150px;
+
+    box-shadow:
+        0 7px 20px rgba(31, 78, 121, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .proficiency-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(31, 78, 121, 0.13);
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(31, 78, 121, 0.13);
 }
 
+
+/* Level title */
 .level-title {
     display: flex;
+
     align-items: center;
+
     gap: 8px;
-    margin-bottom: 12px;
+
+    margin-bottom: 16px;
 }
 
 .level-icon {
@@ -1235,60 +1301,95 @@ main {
 }
 
 .level-title strong {
-    color: #172a46;
     font-size: 16px;
+
+    font-weight: 700;
+
+    color: #13233d;
 }
 
+
+/* Level description */
 .proficiency-card p {
-    color: #667b96;
+    margin: 0;
+
+    color: #607b9b;
+
     font-size: 14px;
-    line-height: 1.6;
+
+    line-height: 1.65;
 }
 
 
 /* =========================================================
-   SKILLS SECTIONS
+   SKILLS SECTION
    ========================================================= */
 
 .skills-section {
     width: 100%;
-    margin: 0 0 55px;
-}
 
-.skills-section h2 {
-    text-align: center;
-    color: #243b5a;
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0 0 25px;
+    margin: 0 auto 65px;
 }
 
 
 /* =========================================================
-   SKILL CARDS
+   SECTION TITLES
+   ========================================================= */
+
+.skills-section h2 {
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #243b5a;
+
+    text-align: center;
+
+    margin: 0 0 32px;
+}
+
+
+/* =========================================================
+   SKILL CARD
    ========================================================= */
 
 .skill-card {
     width: 100%;
-    min-height: 130px;
+
+    min-height: 140px;
 
     display: grid;
-    grid-template-columns: 95px 1fr 150px;
+
+    grid-template-columns:
+        90px
+        minmax(0, 1fr)
+        150px;
+
     align-items: center;
-    gap: 25px;
+
+    column-gap: 30px;
 
     background: #ffffff;
 
     border: 1px solid #dce7f0;
+
     border-top: 4px solid #18aeea;
 
     border-radius: 15px;
 
-    padding: 22px 28px;
+    padding: 24px 28px;
 
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
 
-    box-shadow: 0 8px 22px rgba(31, 78, 121, 0.08);
+    box-shadow:
+        0 7px 20px rgba(31, 78, 121, 0.08);
 
     transition:
         transform 0.25s ease,
@@ -1297,7 +1398,9 @@ main {
 
 .skill-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(31, 78, 121, 0.14);
+
+    box-shadow:
+        0 12px 28px rgba(31, 78, 121, 0.14);
 }
 
 
@@ -1306,25 +1409,29 @@ main {
    ========================================================= */
 
 .skill-icon {
-    width: 75px;
-    height: 75px;
+    width: 82px;
+    height: 82px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     background: #d9f0ff;
 
-    border: 2px solid #67ccfa;
+    border: 2px solid #5cc9fa;
 
     border-radius: 15px;
 
     color: #087fbe;
 
     font-size: 23px;
+
     font-weight: 700;
 
-    box-shadow: 0 6px 15px rgba(24, 174, 234, 0.12);
+    box-shadow:
+        0 6px 16px rgba(24, 174, 234, 0.12);
 }
 
 
@@ -1334,23 +1441,33 @@ main {
 
 .skill-info {
     text-align: center;
+
+    min-width: 0;
 }
 
 .skill-info h3 {
     margin: 0 0 10px;
 
-    color: #101f35;
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
 
     font-size: 22px;
+
     font-weight: 700;
+
+    color: #101f35;
 }
 
 .skill-info p {
     margin: 0 auto;
 
-    max-width: 800px;
+    max-width: 850px;
 
-    color: #667b96;
+    color: #607b9b;
 
     font-size: 16px;
 
@@ -1364,13 +1481,18 @@ main {
 
 .skill-rating {
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     justify-content: center;
 
     gap: 10px;
 }
 
+
+/* Rating label */
 .skill-level {
     display: inline-block;
 
@@ -1379,6 +1501,7 @@ main {
     border-radius: 25px;
 
     font-size: 14px;
+
     font-weight: 700;
 
     white-space: nowrap;
@@ -1388,6 +1511,7 @@ main {
 /* Proficient */
 .skill-level.proficient {
     background: #d9f8e6;
+
     color: #08723c;
 }
 
@@ -1395,6 +1519,7 @@ main {
 /* Intermediate */
 .skill-level.intermediate {
     background: #dce9ff;
+
     color: #164797;
 }
 
@@ -1405,8 +1530,10 @@ main {
 
 .rating-dots {
     display: flex;
-    gap: 7px;
+
     justify-content: center;
+
+    gap: 7px;
 }
 
 .dot {
@@ -1424,6 +1551,7 @@ main {
 
 .dot.filled {
     background: #159ed6;
+
     border-color: #159ed6;
 }
 
@@ -1433,709 +1561,149 @@ main {
    ========================================================= */
 
 .footer {
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 20px;
+    width: 100%;
 
-    color: #667b96;
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 10px;
+
+    color: #607b9b;
 
     font-size: 14px;
 }
 
 
-
 /* =========================================================
-   47. ANIMATIONS
+   TABLET
    ========================================================= */
 
-@keyframes fadeDown {
+@media (max-width: 1100px) {
 
-    from {
-        opacity:
-            0;
-
-        transform:
-            translateY(-20px);
-    }
-
-    to {
-        opacity:
-            1;
-
-        transform:
-            translateY(0);
-    }
-}
-
-@keyframes fadeUp {
-
-    from {
-        opacity:
-            0;
-
-        transform:
-            translateY(20px);
-    }
-
-    to {
-        opacity:
-            1;
-
-        transform:
-            translateY(0);
-    }
-}
-
-
-/* =========================================================
-   48. TABLET - 1000PX
-   ========================================================= */
-
-@media (max-width: 1000px) {
-
-    .home-container {
-        grid-template-columns:
-            1fr 0.8fr;
-
-        gap:
-            40px;
+    .skills-page {
+        width: 88%;
+        max-width: 950px;
     }
 
     .proficiency-grid {
-        display:
-            grid;
-
         grid-template-columns:
-            repeat(3, 1fr);
-
-        gap:
-            18px;
+            repeat(2, 1fr);
     }
 
     .skill-card {
         grid-template-columns:
-            65px 1fr;
-    }
+            85px
+            minmax(0, 1fr)
+            135px;
 
-    .skill-rating {
-        grid-column:
-            2;
+        column-gap: 20px;
 
-        align-items:
-            flex-start;
-    }
-
-    .information-container {
-        grid-template-columns:
-            repeat(2, 1fr);
+        padding: 22px;
     }
 }
 
 
 /* =========================================================
-   49. TABLET - 900PX
+   MOBILE
    ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
-    .nav-container {
-        flex-direction:
-            column;
+    .skills-page {
+        width: 88%;
 
-        gap:
-            0.8rem;
+        padding-top: 35px;
     }
 
-    .nav-menu {
-        flex-wrap:
-            wrap;
 
-        justify-content:
-            center;
+    /* Main heading */
+    .skills-page .page-header h1 {
+        font-size: 32px;
+
+        font-weight: 800;
     }
 
-    .home-container {
-        grid-template-columns:
-            1fr;
 
-        text-align:
-            center;
-
-        gap:
-            45px;
+    /* Description */
+    .skills-page .page-header p {
+        font-size: 14px;
     }
 
-    .home-content {
-        display:
-            flex;
 
-        flex-direction:
-            column;
-
-        align-items:
-            center;
-    }
-
-    .home-description {
-        margin-left:
-            auto;
-
-        margin-right:
-            auto;
-    }
-
-    .home-buttons {
-        justify-content:
-            center;
-    }
-
-    .home-card {
-        max-width:
-            330px;
-    }
-
+    /* Proficiency */
     .proficiency-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: 1fr;
+
+        gap: 18px;
     }
 
-    .profile-section {
-        grid-template-columns:
-            1fr;
-
-        text-align:
-            center;
-    }
-
-    .profile-image {
-        margin:
-            auto;
-    }
-}
-
-
-/* =========================================================
-   50. MOBILE / TABLET - 768PX
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    .navbar {
-        padding:
-            0.8rem 1rem;
-    }
-
-    .brand-title {
-        font-size:
-            1rem;
-
-        letter-spacing:
-            0.5px;
-    }
-
-    .brand-logo {
-        width:
-            48px;
-
-        height:
-            48px;
-    }
-
-    .nav-link {
-        padding:
-            0.5rem 0.7rem;
-
-        font-size:
-            0.85rem;
-    }
-
-    .home-section {
-        min-height:
-            auto;
-
-        padding:
-            60px 20px;
-    }
-
-    .home-content h1 {
-        font-size:
-            clamp(2.7rem, 12vw, 4rem);
-    }
-
-    .home-content h2 {
-        font-size:
-            1.35rem;
-    }
-
-    .page-header {
-        padding:
-            2.5rem 20px 2rem;
-    }
-
-    .page-header h1 {
-        font-size:
-            2.3rem;
-    }
-
-    .proficiency-section {
-        padding:
-            0 18px;
-    }
 
     .proficiency-section h2,
     .skills-section h2 {
-        font-size:
-            26px;
+        font-size: 26px;
     }
 
 
-    /* =====================================================
-       CAREER TIMELINE - TABLET
-       ===================================================== */
-
-    .content-container {
-        padding:
-            0 18px 50px;
-    }
-
-    .timeline {
-        gap:
-            22px;
-
-        padding:
-            5px 0;
-    }
-
-    .timeline::before {
-        left:
-            18px;
-
-        width:
-            3px;
-    }
-
-    .timeline-item {
-        width:
-            calc(100% - 50px);
-
-        margin-left:
-            50px;
-
-        padding:
-            22px;
-    }
-
-    .timeline-item::before {
-        left:
-            -45px;
-
-        top:
-            25px;
-
-        width:
-            16px;
-
-        height:
-            16px;
-
-        border-width:
-            4px;
-    }
-
-    .timeline-item h3 {
-        font-size:
-            1.3rem;
-    }
-
-    .timeline-item p {
-        font-size:
-            0.92rem;
-
-        line-height:
-            1.7;
-    }
-}
-
-
-/* =========================================================
-   51. MOBILE - 600PX
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-    .navbar {
-        padding:
-            0.7rem 1rem;
-    }
-
-    .brand-title {
-        font-size:
-            0.9rem;
-
-        text-align:
-            left;
-
-        white-space:
-            normal;
-    }
-
-    .nav-menu {
-        gap:
-            0.1rem;
-    }
-
-    .nav-link {
-        font-size:
-            0.78rem;
-
-        padding:
-            0.45rem 0.55rem;
-    }
-
-    .home-section {
-        padding:
-            50px 18px;
-    }
-
-    .home-content h1 {
-        font-size:
-            2.8rem;
-    }
-
-    .home-content h2 {
-        font-size:
-            1.2rem;
-    }
-
-    .home-description {
-        font-size:
-            0.92rem;
-    }
-
-    .home-card {
-        padding:
-            28px 20px;
-    }
-
-    .home-logo {
-        width:
-            105px;
-
-        height:
-            105px;
-    }
-
-    .page-header h1 {
-        font-size:
-            2rem;
-    }
-
-    .page-header p {
-        font-size:
-            0.9rem;
-    }
-
-
-    /* =====================================================
-       PROFICIENCY BOXES
-       ===================================================== */
-
-    .proficiency-grid {
-        grid-template-columns:
-            1fr;
-
-        gap:
-            16px;
-    }
-
-    .proficiency-card {
-        min-height:
-            210px;
-
-        padding:
-            25px 20px;
-    }
-
-
-    /* =====================================================
-       SKILL CARDS
-       ===================================================== */
-
+    /* Skill card becomes vertical */
     .skill-card {
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
 
-        text-align:
-            center;
+        text-align: center;
 
-        gap:
-            15px;
+        padding: 25px 20px;
+
+        row-gap: 18px;
     }
+
 
     .skill-icon {
-        margin:
-            0 auto;
+        margin: 0 auto;
     }
+
 
     .skill-info {
-        text-align:
-            center;
+        text-align: center;
     }
+
+
+    .skill-info h3 {
+        font-size: 20px;
+    }
+
+
+    .skill-info p {
+        font-size: 14px;
+    }
+
 
     .skill-rating {
-        grid-column:
-            auto;
-
-        align-items:
-            center;
-
-        width:
-            100%;
-    }
-
-
-    /* =====================================================
-       INFORMATION CARDS
-       ===================================================== */
-
-    .information-container {
-        grid-template-columns:
-            1fr;
-    }
-
-    .about-section,
-    .information-section {
-        padding:
-            3rem 1rem;
-    }
-
-    .about-card {
-        padding:
-            1.5rem;
-    }
-
-    .card {
-        padding:
-            1.5rem;
-    }
-
-
-    /* =====================================================
-       CAREER TIMELINE - MOBILE
-       ===================================================== */
-
-    .content-container {
-        padding:
-            0 15px 40px;
-    }
-
-    .timeline {
-        gap:
-            18px;
-    }
-
-    .timeline::before {
-        left:
-            13px;
-    }
-
-    .timeline-item {
-        width:
-            calc(100% - 38px);
-
-        margin-left:
-            38px;
-
-        padding:
-            20px 18px;
-    }
-
-    .timeline-item::before {
-        left:
-            -36px;
-
-        top:
-            22px;
-
-        width:
-            14px;
-
-        height:
-            14px;
-
-        border-width:
-            3px;
-
-        box-shadow:
-            0 0 0 4px #e0f2fe;
-    }
-
-    .timeline-item .date {
-        font-size:
-            0.75rem;
-
-        padding:
-            5px 10px;
-    }
-
-    .timeline-item h3 {
-        font-size:
-            1.15rem;
-
-        line-height:
-            1.35;
-    }
-
-    .timeline-item .company {
-        font-size:
-            0.88rem;
-    }
-
-    .timeline-item p {
-        font-size:
-            0.88rem;
-
-        line-height:
-            1.65;
-    }
-
-    .footer {
-        padding:
-            1.2rem 1rem;
+        margin-top: 5px;
     }
 }
 
 
 /* =========================================================
-   52. VERY SMALL MOBILE - 400PX
+   SMALL MOBILE
    ========================================================= */
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 
-    .navbar {
-        padding:
-            0.7rem;
+    .skills-page {
+        width: 86%;
     }
 
-    .brand {
-        gap:
-            8px;
-    }
-
-    .brand-logo {
-        width:
-            42px;
-
-        height:
-            42px;
-    }
-
-    .brand-title {
-        font-size:
-            0.75rem;
-    }
-
-    .nav-link {
-        font-size:
-            0.72rem;
-
-        padding:
-            0.4rem 0.45rem;
-    }
-
-    .home-content h1 {
-        font-size:
-            2.35rem;
-    }
-
-    .home-content h2 {
-        font-size:
-            1.05rem;
-    }
-
-    .home-logo {
-        width:
-            90px;
-
-        height:
-            90px;
-    }
-
-    .page-header h1 {
-        font-size:
-            1.75rem;
+    .skills-page .page-header h1 {
+        font-size: 28px;
     }
 
     .proficiency-section h2,
     .skills-section h2 {
-        font-size:
-            23px;
+        font-size: 23px;
     }
 
-    .level-icon {
-        width:
-            60px;
-
-        height:
-            60px;
-
-        font-size:
-            25px;
-    }
-
-    .level-title strong {
-        font-size:
-            1rem;
-    }
-
-    .proficiency-card > p {
-        font-size:
-            0.87rem;
-    }
-
-
-    /* =====================================================
-       CAREER TIMELINE - VERY SMALL PHONE
-       ===================================================== */
-
-    .timeline::before {
-        left:
-            10px;
-    }
-
-    .timeline-item {
-        width:
-            calc(100% - 32px);
-
-        margin-left:
-            32px;
-
-        padding:
-            18px 15px;
-    }
-
-    .timeline-item::before {
-        left:
-            -31px;
-
-        width:
-            12px;
-
-        height:
-            12px;
-    }
-
-    .timeline-item h3 {
-        font-size:
-            1.05rem;
-    }
-
-    .timeline-item p {
-        font-size:
-            0.84rem;
-
-        line-height:
-            1.6;
+    .skill-card {
+        padding: 22px 15px;
     }
 }
 
