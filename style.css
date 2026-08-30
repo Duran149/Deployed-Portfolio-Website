@@ -850,6 +850,18 @@ main {
     line-height: 1.7;
 }
 
+/* Small blue line underneath heading */
+.career-page .heading-line {
+    width: 88px;
+    height: 3px;
+
+    background: #18aeea;
+
+    margin: 0 auto 18px;
+
+    border-radius: 10px;
+}
+
 
 /* =========================================================
    18. CAREER TIMELINE
@@ -1045,6 +1057,7 @@ main {
     margin:
         0 0 7px;
 }
+
 
 
 /* =========================================================
