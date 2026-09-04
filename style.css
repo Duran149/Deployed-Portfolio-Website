@@ -2190,7 +2190,7 @@ main {
 .project-card:nth-child(1) .project-number {
     background: linear-gradient(
         145deg,
-        #8750ed 0%,
+        #008000  0%,
         #ffffff 100%
     );
 }
@@ -2207,7 +2207,7 @@ main {
 .project-card:nth-child(2) .project-number {
     background: linear-gradient(
         145deg,
-        #8750ed 0%,
+        #FFCCCB 0%,
         #ffffff 100%
     );
 }
