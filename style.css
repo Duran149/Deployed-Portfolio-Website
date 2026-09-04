@@ -1351,10 +1351,18 @@ main {
 
 
 /* =========================================================
-   SECTION TITLES
+   SKILLS PAGE HEADER
    ========================================================= */
 
-.skills-section h2 {
+.skills-page .page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* KEY SKILLS INVENTORY */
+
+.skills-page .page-header h1 {
     font-family:
         "Segoe UI",
         Tahoma,
@@ -1362,15 +1370,52 @@ main {
         Verdana,
         sans-serif;
 
-    font-size: 30px;
+    font-size: 50px;
 
-    font-weight: 700;
+    font-weight: 800;
+
+    line-height: 1.2;
 
     color: #243b5a;
 
     text-align: center;
 
-    margin: 0 0 32px;
+    /* Space around the title */
+    margin: 0;
+}
+
+
+/* SMALL BLUE LINE UNDERNEATH HEADING */
+
+.skills-page .heading-line {
+    width: 88px;
+
+    height: 3px;
+
+    background: #18aeea;
+
+    /* TOP = space between text and blue line */
+    /* BOTTOM = space between line and description */
+    margin: 8px auto 18px;
+
+    border-radius: 10px;
+}
+
+
+/* DESCRIPTION */
+
+.skills-page .page-header p {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    color: #607b9b;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    text-align: center;
 }
 
 
