@@ -850,16 +850,24 @@ main {
     line-height: 1.7;
 }
 
-/* Small blue line underneath heading */
-.career-page .heading-line {
-    width: 88px;
-    height: 3px;
+.career-title::after {
+    content: "";
 
-    background: #18aeea;
+    position: absolute;
 
-    margin: 0 auto 18px;
+    left: 50%;
 
-    border-radius: 10px;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 215px;
+
+    height: 5px;
+
+    background: #168fc5;
+
+    border-radius: 50px;
 }
 
 
