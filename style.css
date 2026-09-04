@@ -2183,15 +2183,16 @@ main {
    PROJECT 01
    ========================================================= */
 
-.project-card:nth-child(1)
-.project-number {
+.project-card:nth-child(1) {
+    border-color: #ddd6fe;
+}
 
-    background:
-        linear-gradient(
-            145deg,
-            #29abe2 0%,
-            #078ac9 100%
-        );
+.project-card:nth-child(3) .project-number {
+    background: linear-gradient(
+        145deg,
+        #8750ed 0%,
+        #ffffff 100%
+    );
 }
 
 
@@ -2199,15 +2200,16 @@ main {
    PROJECT 02
    ========================================================= */
 
-.project-card:nth-child(2)
-.project-number {
+.project-card:nth-child(2) {
+    border-color: #ddd6fe;
+}
 
-    background:
-        linear-gradient(
-            145deg,
-            #20bd59 0%,
-            #139744 100%
-        );
+.project-card:nth-child(3) .project-number {
+    background: linear-gradient(
+        145deg,
+        #8750ed 0%,
+        #ffffff 100%
+    );
 }
 
 
@@ -2223,7 +2225,7 @@ main {
     background: linear-gradient(
         145deg,
         #8750ed 0%,
-        #7028d9 100%
+        #ffffff 100%
     );
 }
 
