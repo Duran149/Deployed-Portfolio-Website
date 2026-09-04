@@ -2183,11 +2183,11 @@ main {
    PROJECT 01
    ========================================================= */
 
-.project-card:nth-child(1) {
+.project-card:nth-child(3) {
     border-color: #ddd6fe;
 }
 
-.project-card:nth-child(1) .project-number {
+.project-card:nth-child(3) .project-number {
     background: linear-gradient(
         145deg,
         #8750ed 0%,
@@ -2200,11 +2200,11 @@ main {
    PROJECT 02
    ========================================================= */
 
-.project-card:nth-child(2) {
+.project-card:nth-child(3) {
     border-color: #ddd6fe;
 }
 
-.project-card:nth-child(2) .project-number {
+.project-card:nth-child(3) .project-number {
     background: linear-gradient(
         145deg,
         #8750ed 0%,
