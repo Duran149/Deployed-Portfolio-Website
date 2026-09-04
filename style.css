@@ -2215,15 +2215,16 @@ main {
    PROJECT 03
    ========================================================= */
 
-.project-card:nth-child(3)
-.project-number {
+.project-card:nth-child(3) {
+    border-color: #ddd6fe;
+}
 
-    background:
-        linear-gradient(
-            145deg,
-            #8750ed 0%,
-            #7028d9 100%
-        );
+.project-card:nth-child(3) .project-number {
+    background: linear-gradient(
+        145deg,
+        #8750ed 0%,
+        #7028d9 100%
+    );
 }
 
 
